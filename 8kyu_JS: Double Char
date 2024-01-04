@@ -22,3 +22,12 @@ function doubleChar(str) {
   
   return newString
 }
+
+/* METHOD 2: Map array method */
+function doubleChar(str) {
+
+  // turn string into an array, use map function to change each item to that character twice, join back into string
+  return str.split('').map(letter => `${letter}${letter}`).join('')
+}
+
+doubleChar('hi')
