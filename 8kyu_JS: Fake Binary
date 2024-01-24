@@ -21,6 +21,4 @@ let string = '1078392903'
 fakeBin(string)
 
 // METHOD 2: map array
-let fakeBin = str => {
-  return str.split('').map(num => num < 5 ? 0 : 1).join('')
-}
+let fakeBin = str => str.split('').map(num => num < 5 ? 0 : 1).join('')
