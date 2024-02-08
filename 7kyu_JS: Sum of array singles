@@ -59,3 +59,8 @@ let repeats = a => {
   return unique.reduce((a, b) => a + b, 0)
 }
 
+// METHOD 3
+let repeats = a => a
+  // filter array to only include items where the first and last index of that item are the same (meaning there is only one of them)
+  .filter(n => a.indexOf(n) === a.lastIndexOf(n))
+  .reduce((a, b) => a + b, 0)
