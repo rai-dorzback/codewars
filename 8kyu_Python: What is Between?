@@ -9,3 +9,6 @@ b = 4
 
 # METHOD 1: lambda & list comprehension
 between = lambda a, b : [i for i in range(a, b+1)]
+
+# METHOD 2: list() function and range() function
+between = lambda a, b : list(range(a,b+1))
