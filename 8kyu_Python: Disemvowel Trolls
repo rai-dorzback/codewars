@@ -10,6 +10,7 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 Note: for this kata y isn't considered a vowel.
 '''
 
+# METHOD 1
 def disemvowel(string):
     newString = ''
     vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
@@ -24,3 +25,11 @@ def disemvowel(string):
             newString += character
     
     return newString
+
+# METHOD 2: list comprehension
+def disemvowel(string):
+    vowels = 'AaEeIiOoUu'
+    return ''.join([char for char in string if char not in vowels])
+
+# METHOD 3: lambda & list comprehension
+disemvowel = lambda string : ''.join([char for char in string if char not in 'AaEeIiOoUu'])
