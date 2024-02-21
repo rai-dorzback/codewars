@@ -11,3 +11,6 @@ check = lambda a, x : True if a.count(x) > 0 else False
 # METHOD 2
 def check(a, x):
     return True if a.count(x) > 0 else False
+
+# METHOD 3: return x in a (if element x is in list a, itll return True else False)
+check = lambda a, x : x in a
