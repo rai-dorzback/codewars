@@ -1,1 +1,1 @@
-Private Repository of my Codewars Solutions
+Every day, I do at least one Codewars kata (coding challenge) in both JavaScript and Python. This repository includes all of my solutions.
