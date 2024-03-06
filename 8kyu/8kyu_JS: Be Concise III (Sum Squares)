@@ -9,3 +9,4 @@ Shorten the code such that it meets the requirements.
 
 sumSquares = arr => arr.map(n => n ** 2)
     .reduce((sum, current) => sum + current, 0);
+
