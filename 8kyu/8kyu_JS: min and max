@@ -3,7 +3,7 @@ Create a min and max function which find the minimum
 and maximum values in an array, respectively
 */
 
-const min = arr => 
+const min = arr => arr
     .sort((a, b) => a - b)[0];
 const max = arr => arr
     .sort((a, b) => b - a)[0];
