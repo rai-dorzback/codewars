@@ -27,3 +27,7 @@ function isAllPossibilities(x){
 // METHOD 2
 // if the array has any elements in it, for every element, return boolean of if the array includes every index number. else false.
 const isAllPossibilities = x => x.length > 0 ? x.every((e, i) => x.includes(i)) : false;
+
+// METHOD 3
+// sort array, then check if every element in array is equal to index
+const isAllPossibilities = arr => arr.sort((a, b) => a - b).every((e, i) => e === i)
