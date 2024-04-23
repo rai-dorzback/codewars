@@ -9,8 +9,12 @@ If the building contains no ghosts, return the string:
 "You just wanted my autograph didn't you?"
 '''
 
+# method 1
 def ghostbusters(b):
     if b.find(' ') == -1:
         return 'You just wanted my autograph didn\'t you?'
     else:
         return b.replace(' ', '')
+
+# method 2
+ghostbusters = lambda b: b.replace(' ', '') if ' ' in b else 'You just wanted my autograph didn\'t you?'
