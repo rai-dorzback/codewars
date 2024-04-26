@@ -30,3 +30,15 @@
   <h2>Lessons Learned</h2>
   <p>I have learned that there are tons of ways to solve the same problem & different people will have completely unique ways of solving the challenge. There is always more to learn & other methods to try! It's okay if you don't get something the first time-- you become a better engineer with practice and taking time to understand others' solutions.</p>
 </div>
+
+<p align="center">
+  <a href="https://raisadorzback.netlify.app/" target="blank">
+    <img src="https://img.shields.io/badge/Website-563d7c?&style=for-the-badge" alt="Website">
+  </a>
+  <a href="https://www.linkedin.com/in/raisa-d/">
+    <img src="https://img.shields.io/badge/LinkedIn-046E6D?logo=linkedin&style=for-the-badge">
+  </a>
+  <a href="https://twitter.com/rai__bread" target="blank">
+    <img src="https://img.shields.io/badge/Twitter-563d7c?logo=twitter&style=for-the-badge&logoColor=white" alt="rai__bread" />
+  </a> 
+</p>
