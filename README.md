@@ -12,6 +12,11 @@
 
 <p align="center">A repository filled with my solutions for codewars challenges (katas). Completed 350+ unique kata solutions and push at least 7 solutions per week in both JavaScript & Python (typically with multiple solutions in each language).</p>
 
+## Table of Contents
+- [How It's Made](how-its-made)
+- [Optimizations](optimizations)
+- [Lessons Learned](lessons-learned)
+
 <div align="center">
   <h2>How It's Made</h2>
   <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
