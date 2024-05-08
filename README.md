@@ -10,7 +10,7 @@
   <img src="https://github.com/raisa-d/codewars-solutions/assets/144272001/6d55e540-c7ba-4ae5-865d-ddb8dfdcbd08" width=750>
 </p>
 
-<p align="center">A repository filled with my solutions for codewars challenges (katas). Completed 370+ unique kata solutions and push at least 7 solutions per week in both JavaScript & Python (typically with multiple solutions in each language).</p>
+<p align="center">A repository filled with my solutions for codewars challenges (katas). I have completed 390+ unique solutions and push at least 7 challenges/katas weekly in both JavaScript & Python-- typically with multiple solutions for each challenge and language.</p>
 
 ## Table of Contents
 - [How It's Made](#how-its-made)
