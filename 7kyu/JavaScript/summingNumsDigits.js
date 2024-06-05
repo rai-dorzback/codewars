@@ -9,6 +9,7 @@ For example: (Input --> Output)
 Let's assume that all numbers in the input will be integer values.
 */
 
+// method 1
 const sumDigits = n => {
   // turn number into array of strings of each digit
   numArray = String(n).split('');
@@ -20,3 +21,6 @@ const sumDigits = n => {
   // use reduce to sum each digit
   return numArray.reduce((a, b) => +a + +b, 0);
 };
+
+// method 2: use Math.abs, split, and reduce
+const sumDigits = n => String(Math.abs(n)).split('').reduce((a, b) => +a + +b, 0);
