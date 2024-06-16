@@ -13,10 +13,11 @@ checkCoupon("123", "123", "July 9, 2015", "July 9, 2015")  ===  true
 checkCoupon("123", "123", "July 9, 2015", "July 2, 2015")  ===  false
 */
 
+// METHOD 1
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
   // make dates into datetime objects to compare them
-    currentDate = new Date(`${currentDate}`)
-    expirationDate = new Date(`${expirationDate}`)
+    currentDate = new Date(currentDate)
+    expirationDate = new Date(expirationDate)
   
   // check if entered code is same as correct code
   if(enteredCode === correctCode) {
@@ -27,3 +28,6 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
   }
   return false
 }
+
+// METHOD 2: arrow function. instead of nested if statements, using && operator.
+const checkCoupon = (enteredCode, correctCode, currentDate, expirationDate) => (enteredCode === correctCode) && (new Date(currentDate) <= new Date(expirationDate));
