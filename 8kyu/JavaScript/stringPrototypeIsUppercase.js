@@ -13,6 +13,12 @@ Examples (input -> output)
 In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
 */
 
+// method 1: check every character
 String.prototype.isUpperCase = function() {
   return this.split('').every(c => c === c.toUpperCase());
+}
+
+// method 2: works because not strict equals
+String.prototype.isUpperCase = function() {
+  return this == this.toUpperCase()
 }
