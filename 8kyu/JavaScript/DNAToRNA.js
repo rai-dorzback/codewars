@@ -14,8 +14,8 @@ The input string can be of arbitrary length - in particular, it may be empty. Al
 string will only ever consist of 'G', 'C', 'A' and/or 'T'.
 */
 
-# METHOD 1
+// METHOD 1
 let DNAtoRNA = dna => dna.split('').map(e => e === 'T' ? 'U' : e).join('');
 
-# METHOD 2
-let DNAtoRNA = dna => dna.replaceAll('T', 'U');
+// METHOD 2
+let dnaToRNA = dna => dna.replaceAll('T', 'U');
