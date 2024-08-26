@@ -8,6 +8,7 @@ _if(true, function(){console.log("True")}, function(){console.log("false")})
 // Logs 'True' to the console.
 */
 
+// Solution 1
 function _if(bool, func1, func2) {
   if(bool) {
     return func1()
@@ -15,3 +16,6 @@ function _if(bool, func1, func2) {
     return func2()
   }
 }
+
+// Solution 2: arrow function
+const _if = (bool, func1, func2) => bool ? func1() : func2();
