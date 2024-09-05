@@ -15,12 +15,21 @@ function greet(myName, yourName) {
 }
 */
 
+// solution 1
 class Person {
     constructor(name) {
       this.name = name
     }
     
     greet(yourName) {
+      return `Hello ${yourName}, my name is ${this.name}`;
+    }
+}
+
+// solution 2
+function Person(name) {
+    this.name = name; 
+    this.greet = function(yourName) {
       return `Hello ${yourName}, my name is ${this.name}`;
     }
   }
