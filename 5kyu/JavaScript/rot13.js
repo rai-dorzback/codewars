@@ -39,7 +39,23 @@ function rot13(message){
     return res
   }
 
-
+//   SOLUTION 2: easier, make a second array with the right values
+function rot13(message){
+    // alpha array
+    let alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    // rot 13
+    let r13 = 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM'
+    let res = ''
+    for(let char of message) {
+      let i = alpha.indexOf(char)
+      if(i !== -1) {
+        res += r13[i]
+      } else {
+        res += char
+      }
+    }
+    return res
+  }
   
   rot13('test') // grfg
   rot13('hi') // uv
