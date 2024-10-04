@@ -49,3 +49,17 @@ function domainName(url){
   // split by "." so the ending is separate, return first item in array which will be the name
   return url.split('.')[0]
 }
+
+// METHOD 5
+function domainName(url){
+  // array of beginnings of urls that will need to be replaced
+  const beginnings = ["www.", "https://", "http://" ]
+  // loop through beginnings to replace with empty space
+  for(let i of beginnings) {
+    url = url.replace(i, '')
+  }
+  return url.split('.')[0]
+}
+
+// METHOD 6
+const domainName = url => url.replace("www.", '').replace('https://', '').replace('http://', '').split('.')[0]
