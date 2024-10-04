@@ -33,3 +33,19 @@ const domainName = url => {
 
 // METHOD 3: method 1 but on one line using ternary operator
 const domainName = url => url.includes('www') ? url.split('.')[1] : url.includes('http') ? url.split('.')[0].split('//')[1] : url.split('.')[0]
+
+// METHOD 4: make an object for things to replace, loop through object, split by .
+function domainName(url){
+  // object of beginnings of urls that will need to be replaced
+  const replace = {
+    "www.": '',
+    "https://": '',
+    "http://": '',
+  }
+  // loop through them to replace
+  for(key in replace) {
+    url = url.replace(key, replace[key])
+  }
+  // split by "." so the ending is separate, return first item in array which will be the name
+  return url.split('.')[0]
+}
