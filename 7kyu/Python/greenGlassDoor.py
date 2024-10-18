@@ -29,3 +29,10 @@ def step_through_with(s):
         if letter * 2 in s:
             return True
     return False
+
+# SOLUTION 3
+def step_through_with(s):
+    for i in s:
+        if f'{i}{i}' in s:
+            return True
+    return False
