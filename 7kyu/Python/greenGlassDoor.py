@@ -22,3 +22,10 @@ def step_through_with(s):
         if s[i] == s[i-1]:
             return True
     return False
+
+# SOLUTION 2
+def step_through_with(s):
+    for letter in "abcdefghijklmnopqrstuvwxyz":
+        if letter * 2 in s:
+            return True
+    return False
