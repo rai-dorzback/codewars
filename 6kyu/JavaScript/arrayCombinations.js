@@ -10,6 +10,7 @@ See test cases for more examples.
 Good luck!
 */
 
+// SOLUTION 1
 // P: arr of arr
 // R: num -> # possibilites for unique arrays formed by picking 1 element from each subarray
 function solve(arr) {
@@ -25,14 +26,7 @@ solve([[1,2],[4],[5,6]]) // 4
 solve([[1,2],[4,4],[5,6,6]]) // 4
 solve([[1,2],[3,4],[5,6]]) // 145 146 135 136 235 236 245 246 -> 8
 
-// MORE READABLE VERSION
+// SOLUTION 2: use set's size property, then you don't have to map and then reduce--more efficient, just turn the current subarray (b) into a set and get its size
 function solve(arr) {
-  return arr.map(subarr => {
-    let uniqueSubarray = [...new Set(subarr)]
-    return uniqueSubarray.length
-  })
-    .reduce((acc, curr) => acc * curr, 1)
+  return arr.reduce((a, b) => a * new Set(b).size, 1)
 };
-
-// ARROW FUNCTION VERSION
-const solve = arr => arr.map(subarr => [...new Set(subarr)].length).reduce((a, b) => a * b, 1)
