@@ -8,7 +8,7 @@ Examples
 "(( @"     =>  "))((" 
 */
 
-// method 1
+// Solution 1
 const duplicateEncode = w => {
   // turn string to array  
   return w.toLowerCase().split('')
@@ -20,8 +20,22 @@ const duplicateEncode = w => {
     }).join('');
 };
 
-// method 2: same but all on one line
+// Solution 2: same as 1 but all on one line
 const duplicateEncode = w => w.toLowerCase().split('').map((e, i, a) => a.filter(x => x == e).length > 1 ? ')' : '(').join('');
+
+// Solution 3:
+function duplicateEncode(word){
+  word = word.toLowerCase()
+  let res = ''
+  for(let letter of word) {
+    if(word.indexOf(letter) === word.lastIndexOf(letter)) {
+      res += '('
+    } else {
+      res += ')'
+    }
+  }
+  return res
+}
 
 duplicateEncode("din") // "((("
 duplicateEncode("recede") // "()()()"
