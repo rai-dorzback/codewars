@@ -37,6 +37,19 @@ function duplicateEncode(word){
   return res
 }
 
+// Solution 4:same as 3 but with ternary
+function duplicateEncode(word){
+  word = word.toLowerCase()
+  let res = ''
+  for(let letter of word) {
+    word.indexOf(letter) === word.lastIndexOf(letter) ? res += '(': res += ')'
+  }
+  return res
+}
+
+// Solution 5
+
+
 duplicateEncode("din") // "((("
 duplicateEncode("recede") // "()()()"
 duplicateEncode("Success") // ")())())"
