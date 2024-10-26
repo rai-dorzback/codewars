@@ -10,7 +10,7 @@ var websites = [];
 */
 
 // solution 1
-websites.push("codewars")
+websites.push("codewars");
 
 // solution 2
-websites[0] = "codewars"
+websites[0] = "codewars";
