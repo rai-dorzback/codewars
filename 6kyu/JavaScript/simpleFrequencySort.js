@@ -14,7 +14,6 @@ solve([2,3,5,3,7,9,5,3,7]) = [3,3,3,5,5,7,7,2,9]
 function solve(arr){
     // count obj
     let freq = {};
-    
     // arr - loop, count freq of nums
     for(const num of arr) {
         freq[num] = freq[num] + 1 || 1
@@ -25,6 +24,7 @@ function solve(arr){
         if(freq[a] === freq[b]) {
             return a - b
         }
+        // otherwise, sort descending based on freq count
         return freq[b] - freq[a]
     })
 }
