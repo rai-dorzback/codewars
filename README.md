@@ -10,7 +10,7 @@
   <img width="750" alt="Screenshot 2024-07-12 at 7 21 04 PM" src="https://github.com/user-attachments/assets/a36f4c91-44b1-4306-b7f0-c4e71051b88b">
 </p>
 
-<p align="center">A repository filled with my solutions for codewars challenges (katas). I have completed 790+ unique solutions and push at least 7 challenges/katas weekly, typically in both JavaScript & Python & with multiple solutions for each challenge and language.</p>
+<p align="center">A repository filled with my solutions for codewars challenges (katas). I have completed 830+ unique solutions and push at least 7 challenges/katas weekly, typically in both JavaScript & Python & with multiple solutions for each challenge and language.</p>
 
 ## Table of Contents
 - [How It's Made](#how-its-made)
@@ -33,7 +33,7 @@
   <p>I consistently optimize and refactor my code for readability/conciseness. You will see a lot of my challenges have multiple solutions.</p>
 
   <h2>Lessons Learned</h2>
-  <p>I have learned that there are tons of ways to solve the same problem & different people will have completely unique ways of solving the challenge. There is always more to learn & other methods to try! It's okay if you don't get something the first time-- you become a better engineer with practice and taking time to understand others' solutions.</p>
+  <p>I have learned that there are tons of ways to solve the same problem & different people will have completely unique ways of solving the challenge. There is always more to learn & other methods to try! It's okay if you don't get something the first time-- you become a better engineer with practice and taking time to understand others' solutions. I have learned how to reason through problems that seem super confusing and break them down into smaller, more manageable pieces.</p>
 </div>
 
 <p align="center">
