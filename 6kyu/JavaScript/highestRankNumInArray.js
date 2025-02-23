@@ -32,4 +32,4 @@ function highestRank(arr){
     return +maxNum;
 };
   
-highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12], 12)
+highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12], 12);
