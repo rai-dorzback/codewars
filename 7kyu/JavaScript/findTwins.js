@@ -23,3 +23,16 @@ function elimination(arr){
     };
     return duplicate;
 };
+
+// SOLUTION 2
+function elimination(arr){
+    // sort array
+    const sorted = arr.sort((a, b) => a - b);
+    // find any consecutive numbers. filter for any number that is equal to the prior number
+    const result = sorted.filter((e, i, a) => e === a[i-1])[0] || null;
+    return result;
+};
+
+// SOLUTION 3: solution 2 but on one line
+const elimination = arr => arr.sort((a, b) => a - b)
+  .filter((e, i, a) => e === a[i-1])[0] || null;
