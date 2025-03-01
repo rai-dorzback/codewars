@@ -41,3 +41,14 @@ function autocomplete(input, dict){
   const result = dict.filter(word => word.toLowerCase().startsWith(input.toLowerCase())).slice(0, 5);
   return result;
 };
+
+
+// SOLUTION 3: use regex to filter input, all on one line
+const autocomplete = (input, dict) => dict.filter(word => word.toLowerCase().startsWith(input.replace(/[^a-z]/g, "").toLowerCase())).slice(0, 5);;
+
+// SOLUTION 4: same as 3 but more readable
+const autocomplete = (input, dict) => {
+  input = input.replace(/[^a-z]/g, "");
+  const result = dict.filter(word => word.toLowerCase().startsWith(input.toLowerCase())).slice(0, 5);
+  return result;
+};
