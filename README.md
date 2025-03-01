@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-  <img width="750" alt="Screenshot 2024-07-12 at 7 21 04 PM" src="https://github.com/user-attachments/assets/a36f4c91-44b1-4306-b7f0-c4e71051b88b">
+  <img src="https://www.codewars.com/users/raisa-d/badges/large" height="50">
 </p>
 
 <p align="center">A repository filled with my solutions for codewars challenges (katas). I have completed 830+ unique solutions and push at least 7 challenges/katas weekly, typically in both JavaScript & Python & with multiple solutions for each challenge and language.</p>
