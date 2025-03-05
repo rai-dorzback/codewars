@@ -18,3 +18,6 @@ def count_char_occurrences(str, char):
         if c == char:
             count += 1
     return count
+
+def count_char_occurrences(strng, char):
+    return sum(1 for i in strng if i == char)
