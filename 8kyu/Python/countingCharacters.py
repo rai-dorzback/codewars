@@ -9,3 +9,12 @@ def count_char_occurrences(str, char):
 # SOLUTION 2: same as 1 but all on one line using a lambda function
 count_char_occurrences = lambda str, char : str.count(char)
 
+# SOLUTION 3: count by looping through string
+def count_char_occurrences(str, char):
+    count = 0
+    # str - loop thru
+    for c in str:
+        # if the current el is the char, add to count
+        if c == char:
+            count += 1
+    return count
