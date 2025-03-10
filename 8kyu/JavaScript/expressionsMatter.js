@@ -30,3 +30,11 @@ function expressionMatter(a, b, c) {
     const res5  = a + b + c
     return Math.max(res1, res2, res3, res4, res5)
 };
+
+const expressionMatter = (a, b, c) => Math.max(
+    a * (b + c),
+    (a + b) * c,
+    a * b * c,
+    a + b * c,
+    a + b + c
+);
