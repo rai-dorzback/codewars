@@ -21,7 +21,7 @@ The strings representing a given language will always be formatted in the same w
 The input array will always be valid and formatted as in the example above.
 */
 
-
+// SOLUTION 1
 function isSameLanguage(list) {
     let firstLang = list[0]['language'];
     for(const dev of list) {
@@ -31,3 +31,6 @@ function isSameLanguage(list) {
     };
     return true;
 };
+
+// SOLUTION 2
+const isSameLanguage = list => list.every(dev => dev.language === list[0].language);
