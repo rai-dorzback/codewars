@@ -22,3 +22,12 @@ function lettersToNumbers(str) {
 };
 
 console.log(lettersToNumbers("I Love You"), 170);
+
+// SOLUTION 2: massive ternary operator. more concise, way less readable
+function lettersToNumbers(str) {
+  let sum = 0;
+  for(const char of str) {
+    lowerAlpha.includes(char) ? sum += lowerAlpha.indexOf(char)+1 : upperAlpha.includes(char) ? sum += (upperAlpha.indexOf(char)+1)*2 : digits.includes(char) ? sum += +char : sum += 0;
+  };
+  return sum;
+};
