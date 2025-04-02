@@ -21,3 +21,10 @@ function bump(str){
 
 console.log(bump('n__'), 'Woohoo!');
 console.log(bump('nnnnnnnnnnnnnnnnnnnnn'), 'Car Dead');
+
+// SOLUTION 2
+function bump(x){
+    // count bumps by turnin str to arr, filtering for n, taking length
+    const bumps = x.split('').filter(el => el === 'n').length;
+    return bumps <= 15 ? 'Woohoo!' : 'Car Dead';
+  };
