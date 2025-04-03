@@ -27,4 +27,7 @@ function bump(x){
     // count bumps by turnin str to arr, filtering for n, taking length
     const bumps = x.split('').filter(el => el === 'n').length;
     return bumps <= 15 ? 'Woohoo!' : 'Car Dead';
-  };
+};
+
+// SOLUTION 3: all on one line
+const bump = x => x.split('').filter(el => el === 'n').length <= 15 ? 'Woohoo!' : 'Car Dead';
