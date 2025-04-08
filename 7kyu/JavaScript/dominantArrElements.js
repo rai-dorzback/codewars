@@ -42,3 +42,26 @@ console.log(solve([10, 5, 8]), [10, 8]);
 function solve(arr){
     return arr.filter((e,i)=> arr.slice(i+1).every(x => x < e));
 };
+
+// SOLUTION 3: O(N)
+function solve(arr) {
+    let dominant = [];
+    // set maximum to last num
+    let max = arr[arr.length-1];
+    // add last num to array
+    dominant.push(max);
+    
+    // arr - loop backwards
+    for(let i = arr.length-2; i >= 0; i--) {
+        // if num is greater than current max add to dominant
+      if(arr[i] > max) {
+        dominant.push(arr[i]);
+        // reassign max to current num
+        max = arr[i];
+      };
+    };
+    // return and reverse dominant
+    return dominant.reverse();
+  };
+    
+  console.log(solve([1, 21, 4, 7, 5]), [21, 7, 5]);
