@@ -40,7 +40,7 @@
   <a href="https://rai-dorzback.netlify.app/" target="blank">
     <img src="https://img.shields.io/badge/Website-563d7c?&style=for-the-badge" alt="Website">
   </a>
-  <a href="https://www.linkedin.com/in/raisa-d/">
+  <a href="https://www.linkedin.com/in/rai-d/">
     <img src="https://img.shields.io/badge/LinkedIn-046E6D?logo=linkedin&style=for-the-badge">
   </a>
   <a href="https://twitter.com/rai__bread" target="blank">
